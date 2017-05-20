@@ -1,34 +1,37 @@
 #include <SPI.h>
 #include <SD.h>
 
+// #define DEBUG
+
 void cardWrite(char *filename, char *contents, bool debug) {
-    if (debug) {
+    #ifdef DEBUG
         Serial.print("Writing to file: ");
         Serial.println(filename);
-    }
+    #endif
 
-    File file;
-    file = SD.open(filename, FILE_WRITE);
+    File file = SD.open(filename, FILE_WRITE);
 
     if (file) {
         file.println(contents);
         file.close();
 
-        if (debug) {
+        #ifdef DEBUG
             Serial.print("File written successfully: ");
             Serial.println(filename);
-        }
+        #endif
     } else { //error
-        if (debug) {
+        #ifdef DEBUG
             Serial.print("Error writing to file: ");
             Serial.println(filename);
-        }
+        #endif
         return;
     }
 }
 
 void setup() {
-    Serial.begin(9600);
+    #ifdef DEBUG
+        Serial.begin(9600);
+    #endif
     pinMode(13, OUTPUT);
     SD.begin(3);
 }
@@ -45,5 +48,4 @@ void loop() {
     else {
         digitalWrite(13, HIGH);
     }
-    // nothing happens after setup
 }
