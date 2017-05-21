@@ -16,12 +16,12 @@ void cardWrite(char *filename, char *contents, bool debug) {
         file.close();
 
         #ifdef DEBUG
-            Serial.print("File written successfully: ");
+            Serial.print("File written and closed successfully: ");
             Serial.println(filename);
         #endif
-    } else { //error
+    } else {
         #ifdef DEBUG
-            Serial.print("Error writing to file: ");
+            Serial.print("Error writing to file. File could not be opened: ");
             Serial.println(filename);
         #endif
         return;
