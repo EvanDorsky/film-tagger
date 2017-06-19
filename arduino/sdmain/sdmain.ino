@@ -1,10 +1,10 @@
 #include <SPI.h>
 #include <SD.h>
 
-// #define DEBUG
+// #define DEBUG_SD
 
 void cardWrite(char *filename, char *contents, bool debug) {
-    #ifdef DEBUG
+    #ifdef DEBUG_SD
         Serial.print("Writing to file: ");
         Serial.println(filename);
     #endif
@@ -15,12 +15,12 @@ void cardWrite(char *filename, char *contents, bool debug) {
         file.println(contents);
         file.close();
 
-        #ifdef DEBUG
+        #ifdef DEBUG_SD
             Serial.print("File written and closed successfully: ");
             Serial.println(filename);
         #endif
     } else {
-        #ifdef DEBUG
+        #ifdef DEBUG_SD
             Serial.print("Error writing to file. File could not be opened: ");
             Serial.println(filename);
         #endif
@@ -29,7 +29,7 @@ void cardWrite(char *filename, char *contents, bool debug) {
 }
 
 void setup() {
-    #ifdef DEBUG
+    #ifdef DEBUG_SD
         Serial.begin(9600);
     #endif
     pinMode(13, OUTPUT);

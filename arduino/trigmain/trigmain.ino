@@ -4,12 +4,9 @@ void setup() {
     pinMode(4, INPUT);
 }
 
-bool hasExposed = false;
 void loop() {
-    if (digitalRead(4)) {
-        hasExposed = true;
-    }
-    if (hasExposed) {
+    if (digitalRead(4))
         digitalWrite(13, HIGH);
-    }
+    else
+        digitalWrite(13, LOW);
 }
