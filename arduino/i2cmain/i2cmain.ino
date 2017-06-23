@@ -1,5 +1,38 @@
 #include <Wire.h>
 
+const uint8_t LED = 13;
+uint8_t rtcAddr = 0xd0 >> 1;
+
+// i2c transactions
+uint8_t i2c_getByte(uint8_t addr, uint8_t reg) {
+    Wire.beginTransmission(addr);
+    Wire.write(reg);
+
+    Wire.endTransmission(false);
+
+    uint8_t boge = Wire.requestFrom(addr, (uint8_t)1);
+    return Wire.read();
+}
+
+uint8_t i2c_setByte(uint8_t addr, uint8_t reg, uint8_t val) {
+    Wire.beginTransmission(addr);
+    Wire.write(reg);
+    Wire.write(val);
+
+    Wire.endTransmission(false);
+}
+
+// byte conversions
+uint8_t tenByteToNum(uint8_t b, uint8_t mask = 0xf0) {
+    return ((b & mask)>>4)*10 + (b & 0x0f);
+}
+
+uint8_t numToTenByte(uint8_t num, uint8_t mask = 0xf0) {
+    uint8_t tens = num/10;
+    return ((tens << 4) & mask) + num - (tens*10);
+}
+
+// read a register from the RTC
 #define SECONDS 0x00
 #define MINUTES 0x01
 #define HOUR    0x02
@@ -7,8 +40,40 @@
 #define DATE    0x04
 #define MONTH   0x05
 #define YEAR    0x06
+int rtcRead(uint8_t PART) {
+    uint8_t mask = 0xf0;
+    if (PART == HOUR || PART == MONTH)
+        mask = 0x10;
 
-const uint8_t LED = 13;
+    int part = tenByteToNum(i2c_getByte(rtcAddr, PART), mask);
+
+    if (PART == YEAR)
+        part += ((i2c_getByte(rtcAddr, MONTH) & 0x80) >> 7)*100;
+    return part;
+}
+
+void rtcWrite(uint8_t PART, uint8_t val) {
+    uint8_t mask = 0xf0;
+    if (PART == HOUR || PART == MONTH)
+        mask = 0x10;
+
+    i2c_setByte(rtcAddr, PART, numToTenByte(val, mask));
+}
+
+void rtcPrintDateTime() {
+    Serial.print("m");
+    Serial.print(rtcRead(MONTH));
+    Serial.print(" ");
+    Serial.print(rtcRead(DATE));
+    Serial.print("th, ");
+    Serial.print(rtcRead(YEAR));
+    Serial.print(" at ");
+    Serial.print(rtcRead(HOUR));
+    Serial.print(":");
+    Serial.print(rtcRead(MINUTES));
+    Serial.print(":");
+    Serial.println(rtcRead(SECONDS));
+}
 
 void setup() {
     Wire.begin();
@@ -19,71 +84,14 @@ void setup() {
     Serial.println("Ready to go");
 }
 
-uint8_t getByte(uint8_t addr, uint8_t reg) {
-    Wire.beginTransmission(addr);
-    Wire.write(reg);
-
-    Wire.endTransmission(false);
-
-    uint8_t boge = Wire.requestFrom(addr, (uint8_t)1);
-    return Wire.read();
-}
-
-uint8_t tenByte(uint8_t b, uint8_t mask = 0xf0) {
-    return ((b & mask)>>4)*10 + (b & 0x0f);
-}
-
-uint8_t rtcRead = 0xd0 >> 1;
-
-int get(uint8_t PART, uint8_t mask = 0xf0) {
-    return tenByte(getByte(rtcRead, PART), mask);
-}
-
-int seconds() {
-    return get(SECONDS);
-}
-
-int minutes() {
-    return get(MINUTES);
-}
-
-int hour() {
-    return get(HOUR, 0x10);
-}
-
-int date() {
-    return get(DATE);
-}
-
-int month() {
-    return get(MONTH, 0x10);
-}
-
-int century() {
-    return ((getByte(rtcRead, MONTH) & 0x80) >> 7)*100;
-}
-
-int year() {
-    return century() + get(YEAR);
-}
-
-void printDateTime() {
-    Serial.print("m");
-    Serial.print(month());
-    Serial.print(" ");
-    Serial.print(date());
-    Serial.print("th, ");
-    Serial.print(year());
-    Serial.print(" at ");
-    Serial.print(hour());
-    Serial.print(":");
-    Serial.print(minutes());
-    Serial.print(":");
-    Serial.println(seconds());
-}
-
 void loop() {
-    printDateTime();
+    rtcWrite(SECONDS, 4);
+    rtcWrite(MINUTES, 11);
+    rtcWrite(HOUR, 10);
+    rtcWrite(DATE, 22);
+    rtcWrite(MONTH, 6);
+    rtcWrite(YEAR, 17);
+    rtcPrintDateTime();
 
     delay(1000);
 }
