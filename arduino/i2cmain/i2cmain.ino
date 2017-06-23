@@ -40,10 +40,14 @@ uint8_t numToTenByte(uint8_t num, uint8_t mask = 0xf0) {
 #define DATE    0x04
 #define MONTH   0x05
 #define YEAR    0x06
-int rtcRead(uint8_t PART) {
+#define CONTROL 0x0E
+#define STATUS  0x0F
+int rtc_read(uint8_t PART) {
     uint8_t mask = 0xf0;
-    if (PART == HOUR || PART == MONTH)
+    if (PART == MONTH)
         mask = 0x10;
+    else if (PART == HOUR)
+        mask = 0x30;
 
     int part = tenByteToNum(i2c_getByte(rtcAddr, PART), mask);
 
@@ -52,27 +56,33 @@ int rtcRead(uint8_t PART) {
     return part;
 }
 
-void rtcWrite(uint8_t PART, uint8_t val) {
+void rtc_write(uint8_t PART, uint8_t val) {
     uint8_t mask = 0xf0;
-    if (PART == HOUR || PART == MONTH)
+    if (PART == MONTH)
         mask = 0x10;
+    else if (PART == HOUR)
+        mask = 0x30;
 
     i2c_setByte(rtcAddr, PART, numToTenByte(val, mask));
 }
 
-void rtcPrintDateTime() {
+bool rtc_12hourEnabled() {
+    return (i2c_getByte(rtcAddr, HOUR) & 0x40) != 0;
+}
+
+void rtc_printDateTime() {
     Serial.print("m");
-    Serial.print(rtcRead(MONTH));
+    Serial.print(rtc_read(MONTH));
     Serial.print(" ");
-    Serial.print(rtcRead(DATE));
+    Serial.print(rtc_read(DATE));
     Serial.print("th, ");
-    Serial.print(rtcRead(YEAR));
+    Serial.print(rtc_read(YEAR));
     Serial.print(" at ");
-    Serial.print(rtcRead(HOUR));
+    Serial.print(rtc_read(HOUR));
     Serial.print(":");
-    Serial.print(rtcRead(MINUTES));
+    Serial.print(rtc_read(MINUTES));
     Serial.print(":");
-    Serial.println(rtcRead(SECONDS));
+    Serial.println(rtc_read(SECONDS));
 }
 
 void setup() {
@@ -85,13 +95,18 @@ void setup() {
 }
 
 void loop() {
-    rtcWrite(SECONDS, 4);
-    rtcWrite(MINUTES, 11);
-    rtcWrite(HOUR, 10);
-    rtcWrite(DATE, 22);
-    rtcWrite(MONTH, 6);
-    rtcWrite(YEAR, 17);
-    rtcPrintDateTime();
+    // if (Serial.available() > 0) {
+    //     Serial.read();
 
-    delay(1000);
+    //     rtc_write(SECONDS, 15);
+    //     rtc_write(MINUTES, 9);
+    //     rtc_write(HOUR, 6);
+    //     rtc_write(DAY, 5);
+    //     rtc_write(DATE, 23);
+    //     rtc_write(MONTH, 6);
+    //     rtc_write(YEAR, 17);
+    rtc_printDateTime();
+    // }
+
+    delay(100);
 }
