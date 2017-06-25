@@ -77,3 +77,14 @@ void Rtc::printDateTime() {
     Serial.print(":");
     Serial.println(read(SECONDS));
 }
+
+void Rtc::dateTimeString(char *str) {
+    sprintf(str, "m%i %ith, %i at %i:%i:%i",
+        read(MONTH),
+        read(DATE),
+        read(YEAR),
+        read(HOUR),
+        read(MINUTES),
+        read(SECONDS)
+    );
+}

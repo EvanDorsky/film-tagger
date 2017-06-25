@@ -20,6 +20,7 @@ public:
     bool in12hourMode();
 
     void printDateTime();
+    void dateTimeString(char *str);
 
     Rtc (uint8_t addr):
         addr(addr)

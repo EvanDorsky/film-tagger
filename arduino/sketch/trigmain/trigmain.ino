@@ -1,11 +1,10 @@
-
 void setup() {
     pinMode(13, OUTPUT);
-    pinMode(4, INPUT);
+    pinMode(9, INPUT);
 }
 
 void loop() {
-    if (digitalRead(4))
+    if (digitalRead(9))
         digitalWrite(13, HIGH);
     else
         digitalWrite(13, LOW);
