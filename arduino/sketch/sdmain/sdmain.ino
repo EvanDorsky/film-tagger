@@ -33,7 +33,7 @@ void setup() {
         Serial.begin(9600);
     #endif
     pinMode(13, OUTPUT);
-    SD.begin(3);
+    SD.begin(10);
 }
 
 int i = 0;
