@@ -17,7 +17,7 @@ void loop() {
         shutterState = HIGH;
         digitalWrite(13, HIGH);
         // rtc->dateTimeString(dtStr);
-        card->write("time.txt", "test", true);
+        card->write("time.txt", "test2", true);
     }
     else {
         shutterState = LOW;
