@@ -1,7 +1,8 @@
+#include <SPI.h>
+#include <SD.h>
+
 #ifndef CARD_H
 #define CARD_H
-
-#include <SD.h>
 
 class Card {
     int pin;
