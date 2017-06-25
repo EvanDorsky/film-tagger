@@ -95,18 +95,7 @@ void setup() {
 }
 
 void loop() {
-    // if (Serial.available() > 0) {
-    //     Serial.read();
-
-    //     rtc_write(SECONDS, 15);
-    //     rtc_write(MINUTES, 9);
-    //     rtc_write(HOUR, 6);
-    //     rtc_write(DAY, 5);
-    //     rtc_write(DATE, 23);
-    //     rtc_write(MONTH, 6);
-    //     rtc_write(YEAR, 17);
     rtc_printDateTime();
-    // }
 
     delay(100);
 }
