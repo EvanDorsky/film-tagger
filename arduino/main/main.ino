@@ -11,15 +11,16 @@ void setup() {
     pinMode(13, OUTPUT);
 }
 
-char *dtStr;
+char dtStr[100];
 void loop() {
-    if (digitalRead(shutterPin) && !shutterState) {
+    if (!shutterState && digitalRead(shutterPin)) {
         shutterState = HIGH;
         digitalWrite(13, HIGH);
-        // rtc->dateTimeString(dtStr);
-        card->write("time.txt", "test2", true);
+        rtc->dateTimeString(dtStr);
+        card->write("time.txt", dtStr, true);
     }
     else {
         shutterState = LOW;
+        digitalWrite(13, LOW);
     }
 }

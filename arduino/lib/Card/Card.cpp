@@ -2,7 +2,7 @@
 
 void Card::write(char *fname, char *contents, bool debug) {
     if (debug) {
-        Serial.println("=================");
+        Serial.println("================");
         Serial.print("Writing to file: ");
         Serial.println(fname);
     }
