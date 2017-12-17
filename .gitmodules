@@ -1,0 +1,6 @@
+[submodule "tagger-hw/Adafruit-DS3231-Precision-RTC-Breakout-PCB"]
+	path = tagger-hw/Adafruit-DS3231-Precision-RTC-Breakout-PCB
+	url = git@github.com:adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB.git
+[submodule "tagger-hw/MicroSD-breakout-board"]
+	path = tagger-hw/MicroSD-breakout-board
+	url = git@github.com:adafruit/MicroSD-breakout-board.git
