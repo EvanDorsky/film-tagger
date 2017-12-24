@@ -1,0 +1,49 @@
+update
+Hello from the updater!
+Current version is 1.04
+
+Found version file containing 1.04
+
+Versions match! Nothing to do!
+install
+Script self: /Applications/EAGLE-8.5.0/ulp/oshpark.ulp
+Script self dir: /Applications/EAGLE-8.5.0/ulp/
+File source dir: /Applications/EAGLE-8.5.0/ulp//tmp_oshpark/
+ULP Dir: /Applications/EAGLE-8.5.0/ulp
+SCR Dir: /Applications/EAGLE-8.5.0/scr
+BIN Dir: /Applications/EAGLE-8.5.0/eagle.app/Contents/MacOS/
+Found Eagle Version 8.500000
+Checking oshpark-install.ulp and /Applications/EAGLE-8.5.0/ulp/oshpark-install.ulp 
+> Identical! Do nothing...
+Checking oshpark-update.ulp and /Applications/EAGLE-8.5.0/ulp/oshpark-update.ulp 
+> Identical! Do nothing...
+Checking oshpark-upload.ulp and /Applications/EAGLE-8.5.0/ulp/oshpark-upload.ulp 
+> Identical! Do nothing...
+Checking oshpark-utility-includes.ulp and /Applications/EAGLE-8.5.0/ulp/oshpark-utility-includes.ulp 
+> Identical! Do nothing...
+Checking oshpark.ulp and /Applications/EAGLE-8.5.0/ulp/oshpark.ulp 
+> Identical! Do nothing...
+Checking oshpark.png and /Applications/EAGLE-8.5.0/eagle.app/Contents/MacOS//oshpark.png 
+> Identical! Do nothing...
+Checking oshpark-2layer-auto-routing.dru and /Applications/EAGLE-8.5.0/dru/oshpark-2layer-auto-routing.dru 
+> Identical! Do nothing...
+Checking oshpark-2layer-tented.dru and /Applications/EAGLE-8.5.0/dru/oshpark-2layer-tented.dru 
+> Identical! Do nothing...
+Checking oshpark-2layer.dru and /Applications/EAGLE-8.5.0/dru/oshpark-2layer.dru 
+> Identical! Do nothing...
+Checking oshpark-4layer-tented.dru and /Applications/EAGLE-8.5.0/dru/oshpark-4layer-tented.dru 
+> Identical! Do nothing...
+Checking oshpark-4layer.dru and /Applications/EAGLE-8.5.0/dru/oshpark-4layer.dru 
+> Identical! Do nothing...
+Checking oshpark-2layer.cam and /Applications/EAGLE-8.5.0/cam/oshpark-2layer.cam 
+> Identical! Do nothing...
+Checking oshpark-4layer.cam and /Applications/EAGLE-8.5.0/cam/oshpark-4layer.cam 
+> Identical! Do nothing...
+Found a brd section from 8 to 19
+?? MENU ' [oshpark.png]Oshpark{Upload PCB: RUN oshpark-upload.ulp;|Check for updates: RUN oshpark.ulp update;|Update and install:RUN oshpark.ulp update install;} '; ??
+++ MENU ' [oshpark.png]Oshpark{Upload PCB: RUN oshpark-upload.ulp;|Check for updates: RUN oshpark.ulp update;|Update and install:RUN oshpark.ulp update install;} ';
+ ++
+Installing menu.!
+>> MENU ' [oshpark.png]Oshpark{Upload PCB: RUN oshpark-upload.ulp;|Check for updates: RUN oshpark.ulp update;|Update and install:RUN oshpark.ulp update install;} ';
+
+Done!!
