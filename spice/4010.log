@@ -1,0 +1,22 @@
+Circuit: * Z:\Users\Enigmoid\Git\film-tagger\spice\4010.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sun Dec 24 15:10:13 2017
+Total elapsed time: 0.177 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 8601
+traniter = 8568
+tranpoints = 2991
+accept = 2444
+rejected = 547
+matrix size = 25
+fillins = 6
+solver = Normal
+Matrix Compiler1: 1.72 KB object code size  0.5/0.3/[0.2]
+Matrix Compiler2: 2.21 KB object code size  0.3/0.5/[0.2]
+
+
