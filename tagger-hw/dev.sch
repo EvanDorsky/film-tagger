@@ -22601,13 +22601,13 @@ W = angled&lt;p&gt;
 <part name="C9" library="adafruit" deviceset="C-US" device="C0805K" value="0.1uF"/>
 <part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="U$1" library="dorskyee" deviceset="EXC-31B" device=""/>
-<part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
+<part name="X1" library="dorskyee" deviceset="EXC-31B" device=""/>
+<part name="J2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k"/>
 <part name="+3V11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100k"/>
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="X3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
+<part name="J3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
 <part name="SUPPLY25" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="L1" library="dorskyee" deviceset="MH2029-300Y" device=""/>
 <part name="FUSE" library="adafruit" deviceset="PTCFUSE" device="-1812" value="MF-MSMF050-2"/>
@@ -22709,15 +22709,15 @@ W = angled&lt;p&gt;
 <instance part="C9" gate="G$1" x="116.84" y="-119.38"/>
 <instance part="SUPPLY23" gate="GND" x="116.84" y="-129.54"/>
 <instance part="+3V10" gate="G$1" x="116.84" y="-104.14"/>
-<instance part="U$1" gate="G$1" x="134.62" y="-93.98" rot="R90"/>
-<instance part="X2" gate="-1" x="33.02" y="-50.8"/>
-<instance part="X2" gate="-2" x="33.02" y="-53.34"/>
+<instance part="X1" gate="G$1" x="134.62" y="-93.98" rot="R90"/>
+<instance part="J2" gate="-1" x="33.02" y="-50.8"/>
+<instance part="J2" gate="-2" x="33.02" y="-53.34"/>
 <instance part="R10" gate="G$1" x="25.4" y="-40.64" rot="R90"/>
 <instance part="+3V11" gate="G$1" x="25.4" y="-27.94"/>
 <instance part="R11" gate="G$1" x="25.4" y="-60.96" rot="R90"/>
 <instance part="SUPPLY24" gate="GND" x="25.4" y="-71.12"/>
-<instance part="X3" gate="-1" x="119.38" y="-17.78"/>
-<instance part="X3" gate="-2" x="119.38" y="-20.32"/>
+<instance part="J3" gate="-1" x="119.38" y="-17.78"/>
+<instance part="J3" gate="-2" x="119.38" y="-20.32"/>
 <instance part="SUPPLY25" gate="GND" x="114.3" y="-25.4"/>
 <instance part="L1" gate="G$1" x="-129.54" y="-111.76" rot="R90"/>
 <instance part="FUSE" gate="G$1" x="-106.68" y="-71.12"/>
@@ -23059,7 +23059,7 @@ W = angled&lt;p&gt;
 <wire x1="25.4" y1="-66.04" x2="25.4" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-2" pin="S"/>
+<pinref part="J3" gate="-2" pin="S"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
 <wire x1="116.84" y1="-20.32" x2="114.3" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="-20.32" x2="114.3" y2="-22.86" width="0.1524" layer="91"/>
@@ -23453,7 +23453,7 @@ W = angled&lt;p&gt;
 <pinref part="JPOW" gate="B" pin="5"/>
 <wire x1="114.3" y1="-2.54" x2="119.38" y2="-2.54" width="0.1524" layer="91"/>
 <label x="114.3" y="-2.54" size="1.778" layer="95" rot="R180"/>
-<pinref part="X3" gate="-1" pin="S"/>
+<pinref part="J3" gate="-1" pin="S"/>
 <wire x1="116.84" y1="-17.78" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="-17.78" x2="114.3" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
@@ -23547,7 +23547,7 @@ W = angled&lt;p&gt;
 <wire x1="106.68" y1="-106.68" x2="111.76" y2="-106.68" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="-106.68" x2="111.76" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="-101.6" x2="134.62" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="1"/>
+<pinref part="X1" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="-101.6" x2="134.62" y2="-99.06" width="0.1524" layer="91"/>
 <label x="114.3" y="-101.6" size="1.778" layer="95"/>
 </segment>
@@ -23558,7 +23558,7 @@ W = angled&lt;p&gt;
 <wire x1="106.68" y1="-101.6" x2="109.22" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-101.6" x2="109.22" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-86.36" x2="134.62" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="2"/>
+<pinref part="X1" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="-86.36" x2="134.62" y2="-88.9" width="0.1524" layer="91"/>
 <label x="114.3" y="-86.36" size="1.778" layer="95"/>
 </segment>
@@ -23577,7 +23577,7 @@ W = angled&lt;p&gt;
 </net>
 <net name="TRIG_L" class="0">
 <segment>
-<pinref part="X2" gate="-2" pin="S"/>
+<pinref part="J2" gate="-2" pin="S"/>
 <wire x1="30.48" y1="-53.34" x2="25.4" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-53.34" x2="25.4" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -23592,7 +23592,7 @@ W = angled&lt;p&gt;
 <net name="TRIG_H" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="X2" gate="-1" pin="S"/>
+<pinref part="J2" gate="-1" pin="S"/>
 <wire x1="30.48" y1="-50.8" x2="25.4" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-50.8" x2="25.4" y2="-45.72" width="0.1524" layer="91"/>
 <label x="22.86" y="-48.26" size="1.778" layer="95" rot="R180"/>
