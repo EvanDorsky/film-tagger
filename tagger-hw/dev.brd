@@ -3483,7 +3483,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="32.3075" y="51.165" size="0.635" layer="25" font="vector"/>
 <attribute name="VALUE" x="29.215" y="52.435" size="0.635" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="ICPOW" library="adafruit" package="SOT23-5L" value="LP298XS" x="27.94" y="52.07" smashed="yes">
+<element name="ICPOW" library="adafruit" package="SOT23-5L" value="CAT6219-330TDGT3" x="27.94" y="52.07" smashed="yes">
 <attribute name="NAME" x="26.3525" y="48.895" size="0.635" layer="25" font="vector"/>
 <attribute name="VALUE" x="26.035" y="48.641" size="0.635" layer="27" font="vector"/>
 </element>
@@ -3551,7 +3551,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="27.2415" y="54.864" size="0.635" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="32.004" y="63.627" size="0.635" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="J1" library="dorskyee" package="SMARTPRJ_CON2_USB_MICRO_B_AT" value="SMARTPRJ_MYCON2_USB-MINI-B" x="1.27" y="50.8" smashed="yes" rot="R270"/>
+<element name="JUSB" library="dorskyee" package="SMARTPRJ_CON2_USB_MICRO_B_AT" value="SMARTPRJ_MYCON2_USB-MINI-B" x="1.27" y="50.8" smashed="yes" rot="R270"/>
 <element name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="22" x="8.255" y="52.07" smashed="yes" rot="R180">
 <attribute name="NAME" x="9.525" y="53.6575" size="0.635" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="8.89" y="53.975" size="0.635" layer="27" font="vector" rot="R180"/>
@@ -3830,12 +3830,12 @@ design rules under a new name.</description>
 <wire x1="20.955" y1="8.525" x2="20.955" y2="6.35" width="0.254" layer="1"/>
 <via x="20.955" y="6.35" extent="1-16" drill="0.381"/>
 <contactref element="BATT" pad="-"/>
-<contactref element="J1" pad="S6"/>
-<contactref element="J1" pad="S5"/>
-<contactref element="J1" pad="S4"/>
-<contactref element="J1" pad="S3"/>
-<contactref element="J1" pad="S2"/>
-<contactref element="J1" pad="S1"/>
+<contactref element="JUSB" pad="S6"/>
+<contactref element="JUSB" pad="S5"/>
+<contactref element="JUSB" pad="S4"/>
+<contactref element="JUSB" pad="S3"/>
+<contactref element="JUSB" pad="S2"/>
+<contactref element="JUSB" pad="S1"/>
 <contactref element="C7" pad="2"/>
 <contactref element="C6" pad="-"/>
 <contactref element="R7" pad="1"/>
@@ -4265,7 +4265,7 @@ design rules under a new name.</description>
 <wire x1="16.15795" y1="56.404" x2="18.25015" y2="58.4962" width="0.508" layer="1"/>
 </signal>
 <signal name="D-">
-<contactref element="J1" pad="P2"/>
+<contactref element="JUSB" pad="P2"/>
 <contactref element="R5" pad="2"/>
 <contactref element="R8" pad="1"/>
 <wire x1="3.9624" y1="51.4604" x2="6.7954" y2="51.4604" width="0.254" layer="1"/>
@@ -4274,7 +4274,7 @@ design rules under a new name.</description>
 <wire x1="6.985" y1="52.49" x2="6.985" y2="54.245" width="0.254" layer="1"/>
 </signal>
 <signal name="D+">
-<contactref element="J1" pad="P3"/>
+<contactref element="JUSB" pad="P3"/>
 <contactref element="R6" pad="2"/>
 <contactref element="R9" pad="1"/>
 <wire x1="3.9624" y1="50.8" x2="6.135" y2="50.8" width="0.254" layer="1"/>
@@ -4308,7 +4308,7 @@ design rules under a new name.</description>
 <wire x1="20.758675" y1="45.72" x2="28.575" y2="45.72" width="0.254" layer="16"/>
 </signal>
 <signal name="UGND">
-<contactref element="J1" pad="P5"/>
+<contactref element="JUSB" pad="P5"/>
 <contactref element="C8" pad="2"/>
 <contactref element="UC" pad="5"/>
 <contactref element="R7" pad="2"/>
@@ -4420,7 +4420,7 @@ design rules under a new name.</description>
 <wire x1="39.155" y1="58.635" x2="36.195" y2="58.635" width="0.254" layer="1"/>
 </signal>
 <signal name="VBUS">
-<contactref element="J1" pad="P1"/>
+<contactref element="JUSB" pad="P1"/>
 <contactref element="FUSE" pad="1"/>
 <wire x1="6.104" y1="54.9028125" x2="6.3271875" y2="55.126" width="0.254" layer="1"/>
 <wire x1="6.104" y1="53.094" x2="6.104" y2="54.9028125" width="0.254" layer="1"/>

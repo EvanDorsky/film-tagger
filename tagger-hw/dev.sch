@@ -22543,7 +22543,7 @@ W = angled&lt;p&gt;
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="ICPOW" library="adafruit" deviceset="LP298X" device="S"/>
+<part name="ICPOW" library="adafruit" deviceset="LP298X" device="S" value="CAT6219-330TDGT3"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C1" library="adafruit" deviceset="CPOL-US" device="A/3216-18R" value="10uF/10V"/>
@@ -22582,7 +22582,7 @@ W = angled&lt;p&gt;
 <part name="BATT" library="battery" library_urn="urn:adsk.eagle:library:109" deviceset="CR2430H" device="" package3d_urn="urn:adsk.eagle:package:4583/1"/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="JPOW" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP3Q" device="" package3d_urn="urn:adsk.eagle:package:15460/1" value="HDR100IMP40M-G-V-TH"/>
-<part name="J1" library="dorskyee" deviceset="SMARTPRJ_MYCON2_USB-MINI-B" device=""/>
+<part name="JUSB" library="dorskyee" deviceset="SMARTPRJ_MYCON2_USB-MINI-B" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="22"/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="22"/>
@@ -22690,7 +22690,7 @@ W = angled&lt;p&gt;
 <instance part="BATT" gate="1" x="83.82" y="-12.7" rot="R90"/>
 <instance part="SUPPLY16" gate="GND" x="83.82" y="-22.86"/>
 <instance part="JPOW" gate="B" x="127" y="0" rot="R270"/>
-<instance part="J1" gate="G$1" x="-129.54" y="-86.36" rot="MR0"/>
+<instance part="JUSB" gate="G$1" x="-129.54" y="-86.36" rot="MR0"/>
 <instance part="SUPPLY17" gate="GND" x="-144.78" y="-116.84"/>
 <instance part="R5" gate="G$1" x="-93.98" y="-78.74" rot="R180"/>
 <instance part="R6" gate="G$1" x="-91.44" y="-86.36" rot="R180"/>
@@ -22988,28 +22988,28 @@ W = angled&lt;p&gt;
 <wire x1="83.82" y1="-20.32" x2="83.82" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="SH6"/>
+<pinref part="JUSB" gate="G$1" pin="SH6"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
 <wire x1="-142.24" y1="-96.52" x2="-144.78" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="-96.52" x2="-144.78" y2="-111.76" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="SH5"/>
+<pinref part="JUSB" gate="G$1" pin="SH5"/>
 <wire x1="-144.78" y1="-111.76" x2="-144.78" y2="-114.3" width="0.1524" layer="91"/>
 <wire x1="-142.24" y1="-93.98" x2="-144.78" y2="-93.98" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="-93.98" x2="-144.78" y2="-96.52" width="0.1524" layer="91"/>
 <junction x="-144.78" y="-96.52"/>
-<pinref part="J1" gate="G$1" pin="SH4"/>
+<pinref part="JUSB" gate="G$1" pin="SH4"/>
 <wire x1="-142.24" y1="-91.44" x2="-144.78" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="-91.44" x2="-144.78" y2="-93.98" width="0.1524" layer="91"/>
 <junction x="-144.78" y="-93.98"/>
-<pinref part="J1" gate="G$1" pin="SH3"/>
+<pinref part="JUSB" gate="G$1" pin="SH3"/>
 <wire x1="-142.24" y1="-88.9" x2="-144.78" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="-88.9" x2="-144.78" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="-144.78" y="-91.44"/>
-<pinref part="J1" gate="G$1" pin="SH2"/>
+<pinref part="JUSB" gate="G$1" pin="SH2"/>
 <wire x1="-142.24" y1="-86.36" x2="-144.78" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="-86.36" x2="-144.78" y2="-88.9" width="0.1524" layer="91"/>
 <junction x="-144.78" y="-88.9"/>
-<pinref part="J1" gate="G$1" pin="SH1"/>
+<pinref part="JUSB" gate="G$1" pin="SH1"/>
 <wire x1="-142.24" y1="-83.82" x2="-144.78" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="-83.82" x2="-144.78" y2="-86.36" width="0.1524" layer="91"/>
 <junction x="-144.78" y="-86.36"/>
@@ -23460,7 +23460,7 @@ W = angled&lt;p&gt;
 </net>
 <net name="D-" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="D-"/>
+<pinref part="JUSB" gate="G$1" pin="D-"/>
 <label x="-111.76" y="-83.82" size="1.778" layer="95"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="-99.06" y1="-78.74" x2="-101.6" y2="-78.74" width="0.1524" layer="91"/>
@@ -23473,7 +23473,7 @@ W = angled&lt;p&gt;
 </net>
 <net name="D+" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="D+"/>
+<pinref part="JUSB" gate="G$1" pin="D+"/>
 <label x="-111.76" y="-86.36" size="1.778" layer="95"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="-96.52" y1="-86.36" x2="-99.06" y2="-86.36" width="0.1524" layer="91"/>
@@ -23492,7 +23492,7 @@ W = angled&lt;p&gt;
 </net>
 <net name="UGND" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="JUSB" gate="G$1" pin="GND"/>
 <wire x1="-116.84" y1="-91.44" x2="-114.3" y2="-91.44" width="0.1524" layer="91"/>
 <label x="-111.76" y="-91.44" size="1.778" layer="95"/>
 <pinref part="L1" gate="G$1" pin="2"/>
@@ -23600,7 +23600,7 @@ W = angled&lt;p&gt;
 </net>
 <net name="VBUS" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="VBUS"/>
+<pinref part="JUSB" gate="G$1" pin="VBUS"/>
 <wire x1="-116.84" y1="-81.28" x2="-114.3" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="-114.3" y1="-81.28" x2="-114.3" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="FUSE" gate="G$1" pin="1"/>
