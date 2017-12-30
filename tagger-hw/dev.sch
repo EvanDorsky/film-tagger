@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,19 +39,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -20855,33 +20855,33 @@ Source: AVX .. aphvc.pdf</description>
 <description>&lt;b&gt;Lithium Batteries and NC Accus&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="CR2430H" urn="urn:adsk.eagle:footprint:4526/1" library_version="1">
+<package name="CR2032H" urn="urn:adsk.eagle:footprint:4525/1" library_version="1">
 <description>&lt;b&gt;LI BATTERY&lt;/b&gt; Varta</description>
-<wire x1="-0.635" y1="9.525" x2="0.635" y2="9.525" width="0.254" layer="21"/>
-<wire x1="0" y1="10.16" x2="0" y2="8.89" width="0.254" layer="21"/>
-<wire x1="-0.635" y1="-7.62" x2="0.635" y2="-7.62" width="0.254" layer="21"/>
-<wire x1="-3.556" y1="12.954" x2="-6.604" y2="12.954" width="0.1524" layer="51"/>
-<wire x1="-6.604" y1="12.954" x2="-6.604" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="6.604" y1="-2.54" x2="6.604" y2="12.954" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="8.255" x2="0.635" y2="8.255" width="0.254" layer="21"/>
+<wire x1="0" y1="8.89" x2="0" y2="7.62" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="-8.89" x2="0.635" y2="-8.89" width="0.254" layer="21"/>
+<wire x1="-3.556" y1="11.049" x2="-6.604" y2="11.049" width="0.1524" layer="51"/>
+<wire x1="-6.604" y1="11.049" x2="-6.604" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="6.604" y1="-2.54" x2="6.604" y2="11.049" width="0.1524" layer="21"/>
 <wire x1="-6.604" y1="-2.54" x2="-1.27" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="3.175" x2="-1.27" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="3.175" x2="1.27" y2="3.175" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="3.175" width="0.1524" layer="21"/>
 <wire x1="1.27" y1="-2.54" x2="6.604" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="12.954" x2="-3.556" y2="12.954" width="0.1524" layer="21"/>
-<wire x1="6.477" y1="12.954" x2="3.556" y2="12.954" width="0.1524" layer="51"/>
-<wire x1="-6.6551" y1="10.3666" x2="12.319" y2="0" width="0.1524" layer="21" curve="237.30044"/>
-<wire x1="6.5973" y1="10.4035" x2="12.3191" y2="0" width="0.1524" layer="21" curve="-57.619169"/>
-<pad name="+@1" x="-5.08" y="12.7" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="+" x="5.08" y="12.7" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="-" x="0" y="-5.08" drill="1.1176" diameter="2.54" shape="octagon"/>
-<text x="-3.302" y="13.335" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="5.08" y="-1.27" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<text x="-2.921" y="-10.16" size="1.27" layer="21" ratio="10">Lit.3V</text>
+<wire x1="-6.698" y1="7.5979" x2="10.033" y2="0" width="0.1524" layer="21" curve="227.397154"/>
+<wire x1="3.556" y1="11.049" x2="-3.556" y2="11.049" width="0.1524" layer="21"/>
+<wire x1="6.477" y1="11.049" x2="3.556" y2="11.049" width="0.1524" layer="51"/>
+<wire x1="6.6203" y1="7.6668" x2="10.0331" y2="0" width="0.1524" layer="21" curve="-49.440271"/>
+<pad name="+@1" x="-5.08" y="10.795" drill="1.1176" diameter="2.54" shape="octagon"/>
+<pad name="+" x="5.08" y="10.795" drill="1.1176" diameter="2.54" shape="octagon"/>
+<pad name="-" x="0" y="-6.985" drill="1.1176" diameter="2.54" shape="octagon"/>
+<text x="-2.54" y="11.43" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="5.08" y="-1.905" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-2.921" y="-5.08" size="1.27" layer="21" ratio="10">Lit.3V</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="CR2430H" urn="urn:adsk.eagle:package:4583/1" type="box" library_version="1">
+<package3d name="CR2032H" urn="urn:adsk.eagle:package:4585/1" type="box" library_version="1">
 <description>LI BATTERY Varta</description>
 </package3d>
 </packages3d>
@@ -20901,20 +20901,20 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CR2430H" urn="urn:adsk.eagle:component:4631/1" prefix="G" library_version="1">
+<deviceset name="CR2032H" urn="urn:adsk.eagle:component:4644/1" prefix="G" library_version="1">
 <description>&lt;b&gt;LI BATTERY&lt;/b&gt; Varta</description>
 <gates>
 <gate name="1" symbol="1V2+2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CR2430H">
+<device name="" package="CR2032H">
 <connects>
 <connect gate="1" pin="+" pad="+"/>
 <connect gate="1" pin="+@1" pad="+@1"/>
 <connect gate="1" pin="-" pad="-"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4583/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:4585/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -22592,7 +22592,7 @@ W = angled&lt;p&gt;
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C1" library="adafruit" deviceset="CPOL-US" device="A/3216-18R" value="10uF/10V"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C2" library="adafruit" deviceset="C-US" device="C0805K" value="0.1uF"/>
+<part name="C2" library="adafruit" deviceset="C-US" device="C0603K" value="0.1uF"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="ACT" library="adafruit" deviceset="LED" device="CHIP-LED0603" value="RED"/>
@@ -22621,9 +22621,8 @@ W = angled&lt;p&gt;
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="4.7k"/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP6Q" device="" package3d_urn="urn:adsk.eagle:package:15457/1" value="HDR100IMP40M-G-V-TH"/>
-<part name="C3" library="adafruit" deviceset="C-US" device="C0805K" value="0.1uF"/>
+<part name="C3" library="adafruit" deviceset="C-US" device="C0603K" value="0.1uF"/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="BATT" library="battery" library_urn="urn:adsk.eagle:library:109" deviceset="CR2430H" device="" package3d_urn="urn:adsk.eagle:package:4583/1"/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="JPOW" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP3Q" device="" package3d_urn="urn:adsk.eagle:package:15460/1" value="HDR100IMP40M-G-V-TH"/>
 <part name="JUSB" library="dorskyee" deviceset="SMARTPRJ_MYCON2_USB-MINI-B" device=""/>
@@ -22642,16 +22641,16 @@ W = angled&lt;p&gt;
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="UCLK2" library="dorskyee" deviceset="DS1347T+" device=""/>
 <part name="SUPPLY22" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C9" library="adafruit" deviceset="C-US" device="C0805K" value="0.1uF"/>
+<part name="C9" library="adafruit" deviceset="C-US" device="C0603K" value="0.1uF"/>
 <part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="X1" library="dorskyee" deviceset="EXC-31B" device=""/>
-<part name="J2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
+<part name="JTRIG" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k"/>
 <part name="+3V11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100k"/>
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="J3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
+<part name="JEXT" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
 <part name="SUPPLY25" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="L1" library="dorskyee" deviceset="MH2029-300Y" device=""/>
 <part name="FUSE" library="adafruit" deviceset="PTCFUSE" device="-1812" value="MF-MSMF050-2"/>
@@ -22683,6 +22682,7 @@ W = angled&lt;p&gt;
 <part name="VCC" library="adafruit" deviceset="PINHD-1X1" device=""/>
 <part name="SDA" library="adafruit" deviceset="PINHD-1X1" device=""/>
 <part name="SCL" library="adafruit" deviceset="PINHD-1X1" device=""/>
+<part name="G1" library="battery" library_urn="urn:adsk.eagle:library:109" deviceset="CR2032H" device="" package3d_urn="urn:adsk.eagle:package:4585/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -22736,7 +22736,6 @@ W = angled&lt;p&gt;
 <instance part="JP1" gate="B" x="-43.18" y="88.9" rot="R270"/>
 <instance part="C3" gate="G$1" x="66.04" y="-66.04"/>
 <instance part="SUPPLY15" gate="GND" x="66.04" y="-76.2"/>
-<instance part="BATT" gate="1" x="83.82" y="-12.7" rot="R90"/>
 <instance part="SUPPLY16" gate="GND" x="83.82" y="-22.86"/>
 <instance part="JPOW" gate="B" x="127" y="0" rot="R270"/>
 <instance part="JUSB" gate="G$1" x="-129.54" y="-86.36" rot="MR0"/>
@@ -22759,14 +22758,14 @@ W = angled&lt;p&gt;
 <instance part="SUPPLY23" gate="GND" x="116.84" y="-129.54"/>
 <instance part="+3V10" gate="G$1" x="116.84" y="-104.14"/>
 <instance part="X1" gate="G$1" x="134.62" y="-93.98" rot="R90"/>
-<instance part="J2" gate="-1" x="33.02" y="-50.8"/>
-<instance part="J2" gate="-2" x="33.02" y="-53.34"/>
+<instance part="JTRIG" gate="-1" x="33.02" y="-50.8"/>
+<instance part="JTRIG" gate="-2" x="33.02" y="-53.34"/>
 <instance part="R10" gate="G$1" x="25.4" y="-40.64" rot="R90"/>
 <instance part="+3V11" gate="G$1" x="25.4" y="-27.94"/>
 <instance part="R11" gate="G$1" x="25.4" y="-60.96" rot="R90"/>
 <instance part="SUPPLY24" gate="GND" x="25.4" y="-71.12"/>
-<instance part="J3" gate="-1" x="119.38" y="-17.78"/>
-<instance part="J3" gate="-2" x="119.38" y="-20.32"/>
+<instance part="JEXT" gate="-1" x="119.38" y="-17.78"/>
+<instance part="JEXT" gate="-2" x="119.38" y="-20.32"/>
 <instance part="SUPPLY25" gate="GND" x="114.3" y="-25.4"/>
 <instance part="L1" gate="G$1" x="-129.54" y="-111.76" rot="R90"/>
 <instance part="FUSE" gate="G$1" x="-106.68" y="-71.12"/>
@@ -22798,6 +22797,7 @@ W = angled&lt;p&gt;
 <instance part="VCC" gate="G$1" x="111.76" y="73.66"/>
 <instance part="SDA" gate="G$1" x="12.7" y="-111.76"/>
 <instance part="SCL" gate="G$1" x="50.8" y="-111.76"/>
+<instance part="G1" gate="1" x="83.82" y="-12.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -23025,8 +23025,8 @@ W = angled&lt;p&gt;
 </segment>
 <segment>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<pinref part="BATT" gate="1" pin="-"/>
 <wire x1="83.82" y1="-20.32" x2="83.82" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="G1" gate="1" pin="-"/>
 </segment>
 <segment>
 <pinref part="JUSB" gate="G$1" pin="SH6"/>
@@ -23100,7 +23100,7 @@ W = angled&lt;p&gt;
 <wire x1="25.4" y1="-66.04" x2="25.4" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="-2" pin="S"/>
+<pinref part="JEXT" gate="-2" pin="S"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
 <wire x1="116.84" y1="-20.32" x2="114.3" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="-20.32" x2="114.3" y2="-22.86" width="0.1524" layer="91"/>
@@ -23475,9 +23475,9 @@ W = angled&lt;p&gt;
 <label x="121.92" y="-66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BATT" gate="1" pin="+"/>
 <wire x1="83.82" y1="-7.62" x2="83.82" y2="-5.08" width="0.1524" layer="91"/>
 <label x="83.82" y="-5.08" size="1.778" layer="95"/>
+<pinref part="G1" gate="1" pin="+"/>
 </segment>
 </net>
 <net name="VBUS_F" class="0">
@@ -23512,7 +23512,7 @@ W = angled&lt;p&gt;
 <pinref part="JPOW" gate="B" pin="5"/>
 <wire x1="114.3" y1="-2.54" x2="119.38" y2="-2.54" width="0.1524" layer="91"/>
 <label x="114.3" y="-2.54" size="1.778" layer="95" rot="R180"/>
-<pinref part="J3" gate="-1" pin="S"/>
+<pinref part="JEXT" gate="-1" pin="S"/>
 <wire x1="116.84" y1="-17.78" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="-17.78" x2="114.3" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
@@ -23636,7 +23636,7 @@ W = angled&lt;p&gt;
 </net>
 <net name="TRIG_L" class="0">
 <segment>
-<pinref part="J2" gate="-2" pin="S"/>
+<pinref part="JTRIG" gate="-2" pin="S"/>
 <wire x1="30.48" y1="-53.34" x2="25.4" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-53.34" x2="25.4" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -23651,7 +23651,7 @@ W = angled&lt;p&gt;
 <net name="TRIG_H" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="J2" gate="-1" pin="S"/>
+<pinref part="JTRIG" gate="-1" pin="S"/>
 <wire x1="30.48" y1="-50.8" x2="25.4" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-50.8" x2="25.4" y2="-45.72" width="0.1524" layer="91"/>
 <label x="22.86" y="-48.26" size="1.778" layer="95" rot="R180"/>
