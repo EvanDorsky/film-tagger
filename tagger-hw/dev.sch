@@ -20356,6 +20356,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="1.626140625" y1="-4.5" x2="-8.04504375" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-8.04504375" y1="-4.5" x2="-8.725" y2="-3.82004375" width="0.127" layer="21" curve="-90"/>
 </package>
+<package name="BS-7">
+<pad name="VBAT+" x="10" y="0" drill="1.5"/>
+<pad name="VBAT-" x="-10" y="0" drill="1.17" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DS3231M">
@@ -20453,6 +20457,18 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="MISO" x="-12.7" y="10.16" length="short" direction="out"/>
 <pin name="CD" x="-12.7" y="20.32" length="short" direction="pas"/>
 <pin name="MNT" x="-12.7" y="-17.78" length="short" direction="sup"/>
+</symbol>
+<symbol name="1V2">
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.635" width="0.4064" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="0.635" y2="0" width="0.4064" layer="94"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-1.27" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.27" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="-" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -20587,6 +20603,22 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 <connect gate="G$1" pin="VSS" pad="VSS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CR2032">
+<gates>
+<gate name="G$1" symbol="1V2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BS-7">
+<connects>
+<connect gate="G$1" pin="+" pad="VBAT+"/>
+<connect gate="G$1" pin="-" pad="VBAT-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -20842,79 +20874,6 @@ Source: AVX .. aphvc.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15460/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="battery" urn="urn:adsk.eagle:library:109">
-<description>&lt;b&gt;Lithium Batteries and NC Accus&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="CR2032H" urn="urn:adsk.eagle:footprint:4525/1" library_version="1">
-<description>&lt;b&gt;LI BATTERY&lt;/b&gt; Varta</description>
-<wire x1="-0.635" y1="8.255" x2="0.635" y2="8.255" width="0.254" layer="21"/>
-<wire x1="0" y1="8.89" x2="0" y2="7.62" width="0.254" layer="21"/>
-<wire x1="-0.635" y1="-8.89" x2="0.635" y2="-8.89" width="0.254" layer="21"/>
-<wire x1="-3.556" y1="11.049" x2="-6.604" y2="11.049" width="0.1524" layer="51"/>
-<wire x1="-6.604" y1="11.049" x2="-6.604" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="6.604" y1="-2.54" x2="6.604" y2="11.049" width="0.1524" layer="21"/>
-<wire x1="-6.604" y1="-2.54" x2="-1.27" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="3.175" x2="-1.27" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="3.175" x2="1.27" y2="3.175" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="3.175" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-2.54" x2="6.604" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-6.698" y1="7.5979" x2="10.033" y2="0" width="0.1524" layer="21" curve="227.397154"/>
-<wire x1="3.556" y1="11.049" x2="-3.556" y2="11.049" width="0.1524" layer="21"/>
-<wire x1="6.477" y1="11.049" x2="3.556" y2="11.049" width="0.1524" layer="51"/>
-<wire x1="6.6203" y1="7.6668" x2="10.0331" y2="0" width="0.1524" layer="21" curve="-49.440271"/>
-<pad name="+@1" x="-5.08" y="10.795" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="+" x="5.08" y="10.795" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="-" x="0" y="-6.985" drill="1.1176" diameter="2.54" shape="octagon"/>
-<text x="-2.54" y="11.43" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="5.08" y="-1.905" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<text x="-2.921" y="-5.08" size="1.27" layer="21" ratio="10">Lit.3V</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="CR2032H" urn="urn:adsk.eagle:package:4585/1" type="box" library_version="1">
-<description>LI BATTERY Varta</description>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="1V2+2" urn="urn:adsk.eagle:symbol:4517/1" library_version="1">
-<wire x1="-1.905" y1="0.635" x2="-1.905" y2="0" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="0" x2="-1.905" y2="-0.635" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="2.54" x2="-0.635" y2="0" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-2.54" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="-" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="+@1" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CR2032H" urn="urn:adsk.eagle:component:4644/1" prefix="G" library_version="1">
-<description>&lt;b&gt;LI BATTERY&lt;/b&gt; Varta</description>
-<gates>
-<gate name="1" symbol="1V2+2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CR2032H">
-<connects>
-<connect gate="1" pin="+" pad="+"/>
-<connect gate="1" pin="+@1" pad="+@1"/>
-<connect gate="1" pin="-" pad="-"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4585/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -22682,7 +22641,7 @@ W = angled&lt;p&gt;
 <part name="VCC" library="adafruit" deviceset="PINHD-1X1" device=""/>
 <part name="SDA" library="adafruit" deviceset="PINHD-1X1" device=""/>
 <part name="SCL" library="adafruit" deviceset="PINHD-1X1" device=""/>
-<part name="G1" library="battery" library_urn="urn:adsk.eagle:library:109" deviceset="CR2032H" device="" package3d_urn="urn:adsk.eagle:package:4585/1"/>
+<part name="BAT" library="dorskyee" deviceset="CR2032" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22797,7 +22756,7 @@ W = angled&lt;p&gt;
 <instance part="VCC" gate="G$1" x="111.76" y="73.66"/>
 <instance part="SDA" gate="G$1" x="12.7" y="-111.76"/>
 <instance part="SCL" gate="G$1" x="50.8" y="-111.76"/>
-<instance part="G1" gate="1" x="83.82" y="-12.7" rot="R90"/>
+<instance part="BAT" gate="G$1" x="83.82" y="-12.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -23026,7 +22985,7 @@ W = angled&lt;p&gt;
 <segment>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
 <wire x1="83.82" y1="-20.32" x2="83.82" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="G1" gate="1" pin="-"/>
+<pinref part="BAT" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="JUSB" gate="G$1" pin="SH6"/>
@@ -23477,7 +23436,7 @@ W = angled&lt;p&gt;
 <segment>
 <wire x1="83.82" y1="-7.62" x2="83.82" y2="-5.08" width="0.1524" layer="91"/>
 <label x="83.82" y="-5.08" size="1.778" layer="95"/>
-<pinref part="G1" gate="1" pin="+"/>
+<pinref part="BAT" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="VBUS_F" class="0">
